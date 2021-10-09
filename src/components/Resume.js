@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function Navbar() {
+export default function Resume() {
     return (
         <div>
             <h1>Resume page</h1>

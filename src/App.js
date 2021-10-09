@@ -1,10 +1,11 @@
-
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Home from './components/Home';
 
 
 function App() {
@@ -18,13 +19,17 @@ function App() {
     }
     if (currentPage === 'Contact') {
       return <Contact />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
 
-      if (currentPage === 'Navbar') {
-        return <Navbar />;
-      }
-      if (currentPage === 'Portfolio') {
-        return <Portfolio />;
-      }    
+    if (currentPage === 'About') {
+      return <About />;
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -32,12 +37,11 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <About></About>
-      <Contact></Contact>
-      <Portfolio></Portfolio>
-      <Resume></Resume>
-      <h1>Hello</h1>
+      <Navbar
+        currentPage = {currentPage}
+        handlePageChange = {handlePageChange}
+      ></Navbar>
+      {renderPage()}
     </div>
   );
 }
