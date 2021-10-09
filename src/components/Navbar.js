@@ -8,7 +8,7 @@ export default function Navbar( { currentPage, handlePageChange} ) {
             <nav className='navbar'>
                 <a className="nav-link" href='#home' onClick={() => handlePageChange('Home')}>Home</a>
 
-                <a className="nav-link" href='#about' onClick={() => handlePageChange('About')}>about</a>
+                <a className="nav-link" href='#about' onClick={() => handlePageChange('About')}>About</a>
 
                 <a className="nav-link" href='#Portfolio' onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
 

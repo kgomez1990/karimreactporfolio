@@ -78,7 +78,7 @@ export default function Contact() {
                         className="form-control"
                         type="text"
                         name="message"
-                        placeholder="Message"
+                        placeholder="Enter Message"
                         onChange={handleInputChange}
                         value={message}
                     />

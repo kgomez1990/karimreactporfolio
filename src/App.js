@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
     if (currentPage === 'About') {
       return <About />;
     }
+
+    if (currentPage === 'Footer') {
+      return <Footer />;
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -42,6 +47,7 @@ function App() {
         handlePageChange = {handlePageChange}
       ></Navbar>
       {renderPage()}
+      <Footer></Footer>
     </div>
   );
 }
