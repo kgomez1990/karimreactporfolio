@@ -41,11 +41,13 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App d-flex flex-column justify-content-between">
       <Navbar
         currentPage = {currentPage}
         handlePageChange = {handlePageChange}
       ></Navbar>
+
+
       {renderPage()}
       <Footer></Footer>
     </div>

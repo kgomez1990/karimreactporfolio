@@ -10,10 +10,11 @@ export default function Portfolio() {
 
             type="button" 
 
+            className="btn btn-primary btn-lg"
+
             target="blank">
 
-
-            </a>
+            Click Me</a>
         </div>
     )
 }
