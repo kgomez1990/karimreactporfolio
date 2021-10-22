@@ -6,7 +6,7 @@ export default function About() {
             <div className="px-4 py-5 my-5 text-center">
                 <img
                     className="d-block mx-auto mb-4 profileImage"
-                    src="../assets/parrot.jpg"
+                    src="../assets/Selfie1Cropped.jpg"
                     alt=""
                 />
                 <h1 className="display-5 fw-bold">About</h1>
